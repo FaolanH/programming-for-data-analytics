@@ -5,10 +5,12 @@
 #the date of the holiday to decide if it is unique.
 
 import requests as rq 
+import pandas as pd
 
-url = "https://www.gov.uk/bank-holidays.json"
-response = rq.get(url)
-data = response.json()
+#url = "https://www.gov.uk/bank-holidays.json"
+#response = rq.get(url)
+#data = response.json()
 
-print (data)
+data = pd.read_json ("https://www.gov.uk/bank-holidays.json")
 
+print (data['northern-ireland']['events'][0])
