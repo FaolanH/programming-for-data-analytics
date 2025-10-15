@@ -9,4 +9,6 @@ import requests as rq
 url = "https://www.gov.uk/bank-holidays.json"
 response = rq.get(url)
 data = response.json()
+
 print (data)
+
