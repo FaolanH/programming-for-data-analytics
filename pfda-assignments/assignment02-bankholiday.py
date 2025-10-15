@@ -11,9 +11,10 @@ url = "https://www.gov.uk/bank-holidays.json"
 response = rq.get(url)
 data = response.json()
 # I found a StackOverflow page to help me convert this to a dataframe (https://stackoverflow.com/questions/59306252/importing-json-file-url-to-pandas-data-frame)
-df_data = pd.DataFrame(data['northern-ireland'])
+df_data = pd.DataFrame.from_dict(data['northern-ireland'])
 
 print (df_data)
+#print (list(data.scotland))
 #data = pd.read_json ("https://www.gov.uk/bank-holidays.json")
 
 #pretty_data = data, indent = 4
