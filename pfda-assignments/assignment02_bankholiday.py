@@ -8,21 +8,26 @@
 import requests as rq 
 import pandas as pd
 import json
+from collections import Counter
 
 url = "https://www.gov.uk/bank-holidays.json"
 response = rq.get(url)
 data = response.json()
 
 # Source: https://www.geeksforgeeks.org/python/response-json-python-requests/
-pretty_data = print(json.dumps(data, indent=4, sort_keys=True))
+# https://www.geeksforgeeks.org/python/json-dumps-in-python/
+pretty_data = json.dumps(data, indent=4, sort_keys=True)
 
+event_count = sum(len(event["events"]) for event in data["northern-ireland"])
+print("Number of chapters:", chapter_count)
 # Printing Northern Ireland events
-for event in data ["northern-ireland"]["events"]:
-    print (f"{event['title']} on {event['date']}")
+#for event in data ["northern-ireland"]["events"]:
+#    print (f"{event['title']} on {event['date']}")
+
+#res = list(dict.fromkeys(data))
+#print(res)
 
 
-unique_names = []
-[unique_names.append(name) for name in customer_names if name not in unique_names]    
 '''
     # Printing Northern Ireland events
 for event in data ["northern-ireland"]["events"]:
