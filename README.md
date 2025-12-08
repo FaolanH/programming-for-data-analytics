@@ -9,6 +9,18 @@ pfda-project
 
 Within the assignments folder, there are 4 key assignments in individual .ipynb or .py files. 
 
+### Assignment02_bankholiday.py
+Creating a dataset that shows the public holidays celebrated in Northern Ireland, seperate to those celebrated in the UK
+
+### Assignment 03_pie.ipynb
+Subsetting email data and creating a piechart of domains
+
+### Assignment 05_population.ipynb
+A subset of population data at a national and county level in Ireland divided by sex
+
+### Assignment 06_weather.ipynb
+Knock Airport data, plotting temperature and wind speeds
+
 Within the projects folder, there is one .ipynb file for all the project content.
 
 The files within this repository will have been run for you.
