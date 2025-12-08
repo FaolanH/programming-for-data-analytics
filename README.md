@@ -10,7 +10,7 @@ pfda-project
 Within the assignments folder, there are 4 key assignments in individual .ipynb or .py files. 
 
 ### Assignment02_bankholiday.py
-Creating a dataset that shows the public holidays celebrated in Northern Ireland, seperate to those celebrated in the UK
+Creating a dataset that shows the public holidays celebrated in Northern Ireland, separate to those celebrated in the UK
 
 ### Assignment 03_pie.ipynb
 Subsetting email data and creating a piechart of domains
