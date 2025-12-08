@@ -5,21 +5,31 @@
 #(i.e. do not happen elsewhere in the UK) you can choose if you want to use the name or 
 #the date of the holiday to decide if it is unique.
 
-import requests as rq 
-import pandas as pd
-import json
-from pandas import json_normalize
+# I tried a couple different ways including for loops to go about this but unfortunately I had to turn to CoPilot for help! 
+# Here is the conversation: https://copilot.microsoft.com/shares/zMsHYuWqBQnBrWtC46fBV
+# I asked it to reference it's sources, which interesting I had used a few
 
+import requests as rq 
 
 url = "https://www.gov.uk/bank-holidays.json"
 response = rq.get(url)
-data =  pd.json_normalize(response.json())
+data = response.json()
 
+# Get the holidays from England & Wales and Scotland
+uk_holidays = set()
+for event in data["england-and-wales"]["events"]:
+    uk_holidays.add((event["title"], event["date"]))
 
-#pretty_data = json.dumps(data, indent=4, sort_keys=True)
+for event in data["scotland"]["events"]:
+    uk_holidays.add((event["title"], event["date"]))
 
-#da = json.loads(pretty_data)
+# Get the holidays for Northern Ireland
+ni_unique_holidays = []
+for event in data["northern-ireland"]["events"]:
+    if (event["title"], event["date"]) not in uk_holidays:
+        # I had also used this method from this source: https://www.geeksforgeeks.org/python/python-get-unique-values-list/
+        ni_unique_holidays.append(event)
 
-#df2 = pd.DataFrame.from_dict(pretty_data, orient ='index')
-print(data)
-
+# Print results
+for event in ni_unique_holidays:
+    print(f"Unique Northern Ireland Holidays - {event['title']} on {event['date']}")
