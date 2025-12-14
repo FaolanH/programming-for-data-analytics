@@ -7,7 +7,7 @@
 
 # I tried a couple different ways including for loops to go about this but unfortunately I had to turn to CoPilot for help! 
 # Here is the conversation: https://copilot.microsoft.com/shares/zMsHYuWqBQnBrWtC46fBV
-# I asked it to reference it's sources, which interesting I had used a few
+# I asked it to reference it's sources, which interestingly I had used to look at already
 
 import requests as rq 
 
