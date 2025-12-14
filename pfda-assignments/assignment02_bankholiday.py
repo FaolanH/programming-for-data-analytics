@@ -1,7 +1,7 @@
-#Author: Faolán Hamilton
-#Assignment: Write a program called assignment02-bankholdiays.py
+# Author: Faolán Hamilton
+# Assignment: Write a program called assignment02-bankholdiays.py
 # Print out the days bank holidays happen in Northern Ireland, 
-#then modify the program to print the bank holidays that are unique to northern Ireland 
+# then modify the program to print the bank holidays that are unique to northern Ireland 
 #(i.e. do not happen elsewhere in the UK) you can choose if you want to use the name or 
 #the date of the holiday to decide if it is unique.
 
