@@ -19,7 +19,7 @@ As this is such a large dataset (nearly half a million records) there is a lot o
 - Decision Status (Granted without conditions (Unconditional), Granted with conditions (Conditional), Refused, Not yet decided)
 - Appeals (Conditional, Modified and Refused) 
 - Residential Units (number of units applied for, number of units granted)
-- Decision Due dates discrepency between the actual decision date and the deadline expressed
+- Decision Due dates discrepancy between the actual decision date and the deadline expressed
 
 
 #### All imports for this repository have been included within the notebook:
@@ -31,3 +31,4 @@ As this is such a large dataset (nearly half a million records) there is a lot o
 - matplotlib.lines
 - re (regular expressions)
 
+#### For both the maps and graphs, I matched the colours throughout using palettes found on [ColorBrewer](https://colorbrewer2.org/#type=diverging&scheme=RdYlGn&n=5). This ensures a consistent scheme throughout the project
