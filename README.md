@@ -21,6 +21,6 @@ A subset of population data at a national and county level in Ireland divided by
 ### Assignment 06_weather.ipynb
 Knock Airport data, plotting temperature and wind speeds
 
-Within the projects folder, there is one .ipynb file for all the project content.
+Within the projects folder, there is one .ipynb file for all the project content, a csv containing the main dataset used and a README.md file
 
 The files within this repository will have been run for you.
