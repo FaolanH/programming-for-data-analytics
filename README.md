@@ -24,4 +24,3 @@ Knock Airport data, plotting temperature and wind speeds
 Within the projects folder, there is one .ipynb file for all the project content.
 
 The files within this repository will have been run for you.
-
